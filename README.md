@@ -17,4 +17,9 @@ use c2gs.RData for genesets,<br/>
 use PPIString.RData for PPI.<br/>
 
 
+### Other species 
+
+PPI for other 3 species ( Arabidopsis, Mouse, Yeast ) are prepared <br/>
+also user can use gene-set and pre-calculated interaction variable for Mouse (from GSKB). 
+
 question / comment : kjh0530@unist.ac.kr
