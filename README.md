@@ -19,6 +19,9 @@ Genes, Genesets, Network, GenesetV. <br>
 |P53|p53.RData|c2gs.RData|networkString.RData networkHumannet.RData|genesetVString1,2.RData genesetVHumannet1,2.RData|
 |Diabete|dg.RData|cpGenesets.RData|networkString.RData networkHumannet.RData|cpgenesetV1,2.RData|
 
+*dgans.Rdata is standard positive gene-sets for Diabete*
+*brcaans.Rdata is standard positive gene-sets for Breast Tumor*
+
 **or you can use Breast Tumor data with DownloadExampleData function in netGO (Recommended)** 
 
 ### Arabidopsis
