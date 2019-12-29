@@ -1,13 +1,10 @@
 # netGO-Data
 
-This repository is built for pre-calculated R object files for demo use.<br>
-If you want to get information about netGO,<br> 
-Please refer this link [netGO](https://github.com/unistbig/netGO).<br>
+This repository contains pre-calculated R object files for demo use.<br>
 
 ## netGO ( Calculation ) 
 
-To run netGO, 4 data are needed. <br>
-Genes, Genesets, Network, GenesetV. <br>
+To run netGO, four input data are requird as follows: genes, genesets, network, genesetV. <br>
 
 ## Usage table 
 
@@ -17,14 +14,14 @@ Genes, Genesets, Network, GenesetV. <br>
 |:---:|:---:|:---:|:---:|:---:|
 |Breast Tumor|brca.RData|c2gs.RData|networkString.RData networkHumannet.RData|genesetVString1,2.RData genesetVHumannet1,2.RData|
 |P53|p53.RData|c2gs.RData|networkString.RData networkHumannet.RData|genesetVString1,2.RData genesetVHumannet1,2.RData|
-|Diabete|dg.RData|cpGenesets.RData|networkString.RData networkHumannet.RData|cpgenesetV1,2.RData|
+|Diabetes|dg.RData|cpGenesets.RData|networkString.RData networkHumannet.RData|cpgenesetV1,2.RData|
 
-*dgans.Rdata is standard positive gene-sets for Diabete*
+*dgans.Rdata is standard positive gene-sets for Diabetes*
 *brcaans.Rdata is standard positive gene-sets for Breast Tumor*
 
-**or you can use Breast Tumor data with DownloadExampleData function in netGO (Recommended)** 
+**or the user can use Breast Tumor data using DownloadExampleData function in netGO (Recommended)** 
 
-### Arabidopsis
+### Arabidopsis thalinana
 
 |Data|Genes|Genesets|Network|GenesetV|
 |:---:|:---:|:---:|:---:|:---:|
@@ -32,8 +29,8 @@ Genes, Genesets, Network, GenesetV. <br>
 
 ### Important
 
-Original genesetV.RData file is large enough (>25Mb), so we splitted to upload in github. <br>
-So you must **rbind** them before use, for example .
+The original genesetV.RData (>25Mb) file was splitted into two to upload to github<br>
+So they should be combined using **rbind**. For example,
 
 ```r 
 load("genesetVString1.RData") # load genesetV1
@@ -44,8 +41,7 @@ rm(genesetV1,genesetV2) # for clear memory usage, optional
 
 ## netGOVis (Visualization)
 
-To run netGOVis, 4 data are needed. <br>
-Obj, Genes, Genesets, Network. <br>
+netGOVis function requires four data as follows : Obj, Genes, Genesets, Network<br>
 
 ## Usage table 
 
@@ -54,7 +50,7 @@ Obj, Genes, Genesets, Network. <br>
 |BreastTumor|brcaresult.RData|brca.RData|c2gs.RData|networkString.RData|
 |ShadowResponse|shadowResult.RData|Aragenes.RData|KEGGara.RData|networkAranet.RData|
 
-*notice that pre-calculated brcaresult is built with brca[1:30], so **you must use brca[1:30]** not all brca genes.*
+*Note that pre-calculated brcaresult is built with brca[1:30], so **only brca[1:30] should be used**.*
 
 ## Sources of data (version omitted)
 
@@ -69,7 +65,7 @@ Yeast : [ShadowResponse](https://www.inetbio.org/yeastnet/)<br>
 [stringDB](https://string-db.org/), [HumanNet](https://www.inetbio.org/humannet/), [AraNet](https://www.inetbio.org/aranet/), [YeastNet](https://www.inetbio.org/yeastnet/), [MouseNet](https://www.inetbio.org/mousenet/)
 <br>
 
-Question / Comment / Suggest : kjh0530@unist.ac.kr
+Question / Comment / Suggest : kjh0530@unist.ac.kr, dougnam@unist.ac.kr
 
 Thanks.
 
