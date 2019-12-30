@@ -16,6 +16,8 @@ To run netGO, four input data are required as follows: genes, genesets, network,
 |P53|p53.RData|c2gs.RData|networkString.RData networkHumannet.RData|genesetVString1,2.RData genesetVHumannet1,2.RData|
 |Diabetes|dg.RData|cpGenesets.RData|networkString.RData networkHumannet.RData|cpgenesetV1,2.RData|
 
+for c5 gene-sets ( gene ontology ), use c5gs.RData and c5genesetV 1~7.RData ( it's string based ) <br>
+
 *dgans.Rdata* is standard positive gene-sets for Diabetes<br>
 *brcaans.Rdata* is standard positive gene-sets for Breast Tumor<br>
 
